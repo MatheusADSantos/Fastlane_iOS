@@ -1,0 +1,6 @@
+framework module Pods_FastlaneAutomation {
+  umbrella header "Pods-FastlaneAutomation-umbrella.h"
+
+  export *
+  module * { export * }
+}

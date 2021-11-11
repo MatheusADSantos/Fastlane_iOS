@@ -13,9 +13,16 @@
 		FB1C37F6272A0F5500DF2FCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB1C37F4272A0F5500DF2FCF /* Main.storyboard */; };
 		FB1C37F8272A0F5900DF2FCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB1C37F7272A0F5900DF2FCF /* Assets.xcassets */; };
 		FB1C37FB272A0F5900DF2FCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB1C37F9272A0F5900DF2FCF /* LaunchScreen.storyboard */; };
+		FB7A4770273C67F60012219B /* fastlane in Resources */ = {isa = PBXBuildFile; fileRef = FB7A476F273C67F60012219B /* fastlane */; };
+		FB7A4773273C68200012219B /* Gemfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = FB7A4771273C68200012219B /* Gemfile.lock */; };
+		FB7A4774273C68200012219B /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = FB7A4772273C68200012219B /* Gemfile */; };
+		FDBC1CE136AF5F99012B464D /* Pods_FastlaneAutomation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F381BABB6EBE4F53F1326D62 /* Pods_FastlaneAutomation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B5F338DECACF2B702CF4C1C /* Pods-FastlaneAutomation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastlaneAutomation.debug.xcconfig"; path = "Target Support Files/Pods-FastlaneAutomation/Pods-FastlaneAutomation.debug.xcconfig"; sourceTree = "<group>"; };
+		67D491B9031BCB317259DD01 /* Pods-FastlaneAutomation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastlaneAutomation.release.xcconfig"; path = "Target Support Files/Pods-FastlaneAutomation/Pods-FastlaneAutomation.release.xcconfig"; sourceTree = "<group>"; };
+		F381BABB6EBE4F53F1326D62 /* Pods_FastlaneAutomation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FastlaneAutomation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB1C37EB272A0F5500DF2FCF /* FastlaneAutomation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastlaneAutomation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB1C37EE272A0F5500DF2FCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB1C37F0272A0F5500DF2FCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,9 @@
 		FB1C37F7272A0F5900DF2FCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB1C37FA272A0F5900DF2FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB1C37FC272A0F5900DF2FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB7A476F273C67F60012219B /* fastlane */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fastlane; sourceTree = "<group>"; };
+		FB7A4771273C68200012219B /* Gemfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile.lock; sourceTree = "<group>"; };
+		FB7A4772273C68200012219B /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDBC1CE136AF5F99012B464D /* Pods_FastlaneAutomation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1996463F621F2E8A244474F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F381BABB6EBE4F53F1326D62 /* Pods_FastlaneAutomation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36CF9F49CB565AB2CD2B8ED2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B5F338DECACF2B702CF4C1C /* Pods-FastlaneAutomation.debug.xcconfig */,
+				67D491B9031BCB317259DD01 /* Pods-FastlaneAutomation.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FB1C37E2272A0F5500DF2FCF = {
 			isa = PBXGroup;
 			children = (
+				FB7A4772273C68200012219B /* Gemfile */,
+				FB7A4771273C68200012219B /* Gemfile.lock */,
+				FB7A476F273C67F60012219B /* fastlane */,
 				FB1C37ED272A0F5500DF2FCF /* FastlaneAutomation */,
 				FB1C37EC272A0F5500DF2FCF /* Products */,
+				36CF9F49CB565AB2CD2B8ED2 /* Pods */,
+				1996463F621F2E8A244474F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +107,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB1C37FF272A0F5900DF2FCF /* Build configuration list for PBXNativeTarget "FastlaneAutomation" */;
 			buildPhases = (
+				C0C5AA8453706122EBC91E0F /* [CP] Check Pods Manifest.lock */,
 				FB1C37E7272A0F5500DF2FCF /* Sources */,
 				FB1C37E8272A0F5500DF2FCF /* Frameworks */,
 				FB1C37E9272A0F5500DF2FCF /* Resources */,
@@ -125,13 +159,41 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB7A4774273C68200012219B /* Gemfile in Resources */,
+				FB7A4773273C68200012219B /* Gemfile.lock in Resources */,
 				FB1C37FB272A0F5900DF2FCF /* LaunchScreen.storyboard in Resources */,
 				FB1C37F8272A0F5900DF2FCF /* Assets.xcassets in Resources */,
+				FB7A4770273C67F60012219B /* fastlane in Resources */,
 				FB1C37F6272A0F5500DF2FCF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C0C5AA8453706122EBC91E0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FastlaneAutomation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FB1C37E7272A0F5500DF2FCF /* Sources */ = {
@@ -284,6 +346,7 @@
 		};
 		FB1C3800272A0F5900DF2FCF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B5F338DECACF2B702CF4C1C /* Pods-FastlaneAutomation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,7 +365,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "MatheusADSantos-com.github.FastlaneAutomation";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.fastlane.automation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -312,6 +375,7 @@
 		};
 		FB1C3801272A0F5900DF2FCF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67D491B9031BCB317259DD01 /* Pods-FastlaneAutomation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -330,7 +394,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "MatheusADSantos-com.github.FastlaneAutomation";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.fastlane.automation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
