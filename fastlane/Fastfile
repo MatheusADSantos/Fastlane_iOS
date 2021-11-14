@@ -9,17 +9,21 @@ platform :ios do
         clientTunes = Spaceship::Tunes.login(ENV["APPLE_ID"], ENV["FASTLANE_PASSWORD"])
         client = Spaceship::Portal.login(ENV["APPLE_ID"] ,ENV["FASTLANE_PASSWORD"])
       
-        UI.message "* Developer Portal Team ID:"
+        UI.message "\n\n\n* Developer Portal Team ID:"
         strDevPortal = "" 
+        a=0
         client.teams.each do |team|
-            UI.message "#{team['name']} (#{team['teamId']})"
+            a+=1
+            UI.message "#{a}) #{team['name']} (#{team['teamId']})"
             strDevPortal << "#{team['name']} (#{team['teamId']})||"
         end
 
-        UI.message "* App Store Connect Team ID:"
+        UI.message "\n\n\n* App Store Connect Team ID:"
         strClientTunes = "" 
+        a=0
         clientTunes.teams.each do |team|
-            UI.message "#{team['contentProvider']['name']} (#{team['contentProvider']['contentProviderId']})"
+            a+=1
+            UI.message "#{a}) #{team['contentProvider']['name']} (#{team['contentProvider']['contentProviderId']})"
             strClientTunes << "#{team['contentProvider']['name']} (#{team['contentProvider']['contentProviderId']})||"
         end 
     end
