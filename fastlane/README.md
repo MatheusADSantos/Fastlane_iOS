@@ -1,53 +1,74 @@
+fastlane documentation
+================
+# Installation
 
-# All that you know about Fastlane in my Notion
-https://mangrove-vase-933.notion.site/Fastlane-d4783bacfc0e46229348cb51b6e97017
+Make sure you have the latest version of the Xcode command line tools installed:
 
+```
+xcode-select --install
+```
 
-# Create and edit Archive .env:
+Install _fastlane_ using
+```
+[sudo] gem install fastlane -NV
+```
+or alternatively using `brew install fastlane`
 
-# Bundle Identifier
-APP_IDENTIFIER  = "bundle"
+# Available Actions
+## iOS
+### ios getTeamNames
+```
+fastlane ios getTeamNames
+```
 
-# app store connect
-APPLE_ID          = "login(AppleID)"
-FASTLANE_PASSWORD = "password"
+### ios create_keys
+```
+fastlane ios create_keys
+```
 
-# Xcode
-WORKSPACE       = "projectName.xcworkspace"
-SCHEME          = "projectName"
-CONFIGURATION   = ""
+### ios download_keys
+```
+fastlane ios download_keys
+```
+Download keys
+### ios buildAdHoc
+```
+fastlane ios buildAdHoc
+```
+Build Ad Hoc
+### ios build
+```
+fastlane ios build
+```
+Build
+### ios app_center
+```
+fastlane ios app_center
+```
+App Center
+### ios firebase
+```
+fastlane ios firebase
+```
+Deploy to Firebase Distribution
+### ios tf
+```
+fastlane ios tf
+```
+Upload to Test Flight
+### ios tf_external
+```
+fastlane ios tf_external
+```
+Upload to Test Flight - External
+### ios inc
+```
+fastlane ios inc
+```
+Increment Build Number
 
-# Provisioning Profiles
-PROFILE_APP_STORE  = "profileDist"
-PROFILE_AD_HOC     = "profileADHOC"
+----
 
-# Developer Portal Team ID
-team_id         = "bundle exec fastlane getTeamNames"
-
-# App Store Connect Team ID
-itc_team_id     = "bundle exec fastlane getTeamNames"
-
-# Match: senha do git repo
-MATCH_PASSWORD  = ""
-
-# Transporter
-# App Store Connect > Apps > App > Information App > Apple ID(ID generate automaticaly to your app).
-APP_STORE_CONNECT_APPLE_ID = "xxx"
-
-# https://appleid.apple.com > Security > APP-SPECIFIC-PASSWORD > Generate Password
-# (This passwrod permite fastlane to send test flight even though account has a 2 factory security abled)
-# Documentation: https://docs.fastlane.tools/best-practices/continuous-integration/
-FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD = "xxx"
-
-# Firebase dist
-FIREBASE_DIST_SERVICE_ACCOUNT_FILE = ""
-FIREBASE_APP_ID     = ""
-FIREBASE_TEST_GROUP = ""
-FIREBASE_TESTERS    = ""
-
-# AppCenter
-APP_CENTER_API_TOKEN    = ""
-APP_CENTER_OWNER_NAME   = ""
-APP_CENTER_OWNER_TYPE   = "organization"
-APP_CENTER_APP_NAME     = ""
-APP_CENTER_DESTINATIONS = "Collaborators"
+This README.md is auto-generated and will be re-generated every time [_fastlane_](https://fastlane.tools) is run.
+More information about fastlane can be found on [fastlane.tools](https://fastlane.tools).
+The documentation of fastlane can be found on [docs.fastlane.tools](https://docs.fastlane.tools).
